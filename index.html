@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Javascript Quiz App</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+
+    <div class="animation-r shake"></div>
+    <div class="animation-l shake"></div>
+    <div class="quiz-start">
+        <div class="quiz-header">
+            <h2>QUİZ</h2>
+        </div>
+        <div class="quiz-rules">
+            <h4>1. You Have Only 20 Seconds For Each Question.</h4>
+            <h4>2. You Can't Undo After Choosing Your Answer.</h4>
+            <h4>3. You Will Get Points For Your Correct Answers.</h4>
+            <h4>4. You Can't Log Out After You Start The Quiz.</h4>
+        </div>
+        <button class="button" id="start">START</button>
+    </div>
+
+    <section class="section-quiz" id="quiz">
+        <div class="quiz-container">
+            <div class="quiz-title">
+                <h2>Javascript Quiz App</h2>
+                <div class="time-container">
+                    <div class="timer">
+                        <p id="countdown"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-inner">
+                <div class="quiz-questions">
+                    <h2 class="questionNo"></h2>
+                    <h2 id="question"></h2>
+                </div>
+                <div class="quiz-answers">
+                    <h3 class="reply" id="option1"></h3>
+                    <h3 class="reply" id="option2"></h3>
+                    <h3 class="reply" id="option3"></h3>
+                    <h3 class="reply" id="option4"></h3>
+                </div>
+            </div>
+            <div class="quiz-footer">
+                <button class="button" id="submit">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="result">
+        <div class="container">
+            <div class="icon">
+                <i class="far fa-check-circle"></i>
+            </div>
+            <div class="completed">
+                <h4>Quiz Completed</h4>
+                <h4 class="points">Your score: 10/10</h4>
+            </div>
+        </div>
+        <div class="result-footer">
+            <button class="button" id="refresh">Try Again !</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
